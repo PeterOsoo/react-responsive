@@ -1,9 +1,17 @@
 import React from "react"
-import logo from "./logo.svg"
 import "./App.css"
+import Navbar from "./components/Navbar"
+import { Switch, Route } from "react-router-dom"
 
 const App = () => {
-	return <h1>React app</h1>
+	return (
+		<React.Fragment>
+			<Navbar />
+			<Switch>
+				<Route path="/" exact />
+			</Switch>
+		</React.Fragment>
+	)
 }
 
 export default App
